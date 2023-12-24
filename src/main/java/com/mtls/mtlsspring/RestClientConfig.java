@@ -17,10 +17,10 @@ import java.security.cert.CertificateException;
 @Configuration
 public class RestClientConfig {
 
-    private static final String PKCS12_FILE_PATH = "C:\\Users\\nadarajah.h\\Desktop\\TVs\\STARTIMES\\centenarybank-mtls\\centenarybank-mtls\\badssl.com-client.p12";
+    private static final String PKCS12_FILE_PATH = "yourpath\\badssl.com-client.p12";
     private static final String PKCS12_PASSWORD = "badssl.com";
-    private static final String TRUSTSTORE_FILE_PATH = "C:\\Users\\nadarajah.h\\Desktop\\TVs\\STARTIMES\\centenarybank-mtls\\centenarybank-mtls\\truststore.jks";
-    private static final String TRUSTSTORE_PASSWORD = "sunrise";
+    private static final String TRUSTSTORE_FILE_PATH = "yourpath\\truststore.jks";
+    private static final String TRUSTSTORE_PASSWORD = "password";
 
     @Bean
     public RestTemplate restTemplate() {
